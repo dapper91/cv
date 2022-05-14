@@ -9,6 +9,7 @@
 \usepackage{tabularx}
 \usepackage{titlesec}
 \usepackage{changepage}
+\usepackage{ulem}
 
 \title{Curriculum Vitae}
 \date{\today}
@@ -18,6 +19,7 @@
 \setlength{\parskip}{3pt}
 \setlength{\parindent}{0em}
 
+\definecolor{darkdark}{RGB}{35, 105, 120}
 \definecolor{dark}{RGB}{45, 120, 160}
 \definecolor{middle}{RGB}{210, 220, 255}
 \definecolor{light}{RGB}{240, 240, 255}
@@ -27,6 +29,7 @@
 
 \newcommand{\alarm}[1]{{\textcolor{BrickRed}{\textbf{#1}}}}
 \newcommand{\notice}[1]{{\textcolor{dark}{\textbf{#1}}}}
+\newcommand{\info}[1]{{\textcolor{darkdark}{\textbf{#1}}}}
 
 
 \begin{document}
@@ -51,7 +54,7 @@
 
         \vspace{10pt}
 
-        Software engineer with more than six years of experience working on projects from different fields like cybersecurity, cloud computing, financial services; looking to become a part of an experienced developer team to work on creating innovative software and services.
+        Software engineer with more than six years of experience working on projects from different fields like cybersecurity, decentralized apps, cloud computing, distributed systems, fintech; looking to become a part of an experienced developer team to work on creating innovative software and services.
 
     \end{adjustwidth}
 
@@ -68,39 +71,39 @@
 
     \begin{adjustwidth}{10pt}{10pt}
 
-        \notice{Python software engineer at Tochka Bank} / \textit{05.2019 – present}
+        \notice{Software Engineer at Tochka Bank} / \textit{05.2019 – present}
 
         \begin{itemize}
 
-        \item Designed, developed and launched a quick payments service from scratch. Quick payments service is financial infrastructure that provides an ability to make payments without cash or plastic cards using a QR-code (merchant side) and a mobile phone app (customer side) in near-real-time.
+        \item Designed, developed and launched the quick payments service. It had been implemented from scratch and handled hundreds of thousands of payments a day. \info{The service became profitable in one year after the launch}. The quick payments service is a financial infrastructure that provides the ability to make payments without cash or plastic cards using a QR-code (merchant side) and a mobile phone app (customer side) in near-real-time.
 
-        \item Fully designed, implemented and configured CI/CD process including unit and integration testing, code analysis, application build and deployment which increased code quality, lowered bugs quantity and reduced feature release delay to several minutes.
+        \item Fully designed, implemented and configured CI/CD process including unit and integration testing, code analysis, application build and deployment which \info{increased code quality}, \info{lowered bugs quantity} and \info{reduced feature release delay} to several minutes.
 
-        \item Took part in development of financial analysis web tools backend that helped entrepreneurs to possess comprehensive information about theirs financial statistics. The tools provided a lot of visual information like charts and tables based on statistical analysis, classification and clusterization algorithms that helped out customers to reduce their expenses. As a result the service received positive user feedback and most of the customers extended theirs trial subscription.
+        \item Took part in development of financial analysis web tools backend that helped entrepreneurs to possess comprehensive information about theirs financial statistics. The tools provided a lot of visual information like charts and tables based on statistical analysis, classification and clusterization algorithms that helped out customers to reduce their expenses. As a result \info{the service received positive user feedback and most of the customers extended theirs trial subscription}.
 
         \end{itemize}
 
 
-        \notice{Python Software Engineer at Yandex} / \textit{11.2018 – 05.2019}
+        \notice{Software Engineer at Yandex} / \textit{11.2018 – 05.2019}
 
         \begin{itemize}
 
-        \item Took part in development of a highly-performant and highly-available task scheduler SAAS that provided optimal company cluster resources utilization which reduced the company expenses. The service was able to store and process several petabytes of user data in multiple data centers.
+        \item Took part in development of a highly-performant and highly-available task scheduler SAAS that provided optimal company cluster resources utilization which \info{reduced the company expenses more than 10\%}. The service was able to store and process several petabytes of user data in multiple data centers.
 
-        \item Took part in development and improvement of service API and SDK providing an ability to describe complex execution pipelines on several thousand of servers in multiple data centers providing high availability 24/7.
+        \item Took part in development and improvement of service API and SDK providing an ability to describe complex execution pipelines on several thousand of servers in multiple data centers. As a result the \info{service was able to provide availability 99.99\%}.
 
         \end{itemize}
 
 
-        \notice{Python / C++ Software Enginer at USSC Ltd.} / \textit{08.2016 – 11.2018}
+        \notice{Software Engineer at USSC Ltd.} / \textit{08.2016 – 11.2018}
 
         \begin{itemize}
 
-        \item Took part in development of software for industrial networks cybersecurity analysis, malware attacks prevention and network traffic inspection. The product was able to detect cyberattacks on enterprise networks and helped in incident investigation at critical facilities.
+        \item Took part in development of software for industrial networks cybersecurity analysis, malware attacks prevention and network traffic inspection. \info{The product was able to detect cyberattacks on enterprise networks} and helped in incident investigation at critical facilities.
 
-        \item Rewritten some security modules from multi-threaded to asynchronous execution model which greatly increased software performance and made it possible to monitor much more production facilities without hardware update.
+        \item Rewritten some security modules from multi-threaded to asynchronous execution model which \info{increased software performance more than 50\%} and made it possible to monitor much more production facilities without hardware update.
 
-        \item Developed a module that used SCAP (security content automation protocol) standard to analyze OS integrity and protection using open world-wide vulnerability database which let to detect 0-day vulnerabilities as soon as possible.
+        \item Developed a module that used SCAP (security content automation protocol) standard to analyze OS integrity and protection using open world-wide vulnerability database which \info{let the system to detect 0-day vulnerabilities as soon as possible}.
 
         \end{itemize}
 
@@ -115,19 +118,19 @@
         \begin{tabular}{
             >{\columncolor{light}}m{5em}
             >{\columncolor{white}}m{7em}
-            >{\columncolor{light}}m{7em}
-            >{\columncolor{white}}m{3em}
-            >{\columncolor{light}}m{6em}
+            >{\columncolor{light}}m{8em}
+            >{\columncolor{white}}m{5em}
+            >{\columncolor{light}}m{5em}
             >{\columncolor{white}}m{12em}
         }
 
         \rowcolor{middle}
-        Languages & Databases     & Frameworks   & VCS & Other      &  \\
-        Python    & PostgreSQL    & asyncio      & Git & Linux      & SQL \\
-        C/C++     & MongoDB       & aiohttp      &     & Docker     & BASH \\
-        Rust      & Redis         & flask        &     & Kubernetes & Machine Learning Basics \\
-                  & Elasticsearch & scikit-learn &     & RabbitMQ   & Distributed Systems \\
-                  &               &              &     & Kafka      & CI/CD \\
+        Languages & Databases     & Frameworks/Libs   & Dev tools  & Other      &  \\
+        Rust      & PostgreSQL    & tokio             & Git        & Linux      & Distributed Systems \\
+        Python    & MongoDB       & asyncio           & Docker     & RabbitMQ   & Machine Learning Basics \\
+        C/C++     & Redis         & aiohttp           & Kubernetes & Kafka      & Networking \\
+                  & Elasticsearch & flask             &            & SQL        & CI/CD \\
+                  &               & scikit-learn      &            & BASH       &  \\
 
         \end{tabular}
 
