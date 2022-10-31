@@ -10,6 +10,7 @@
 \usepackage{titlesec}
 \usepackage{changepage}
 \usepackage{ulem}
+\usepackage{tcolorbox}
 
 \title{Curriculum Vitae}
 \date{\today}
@@ -27,9 +28,13 @@
 \titleformat{\subsection}{\Large\bfseries\color{dark}}{}{0em}{}[{\titlerule[1.5pt]}]
 \titlespacing{\subsection}{0pt}{5pt}{5pt}
 
+
 \newcommand{\alarm}[1]{{\textcolor{BrickRed}{\textbf{#1}}}}
 \newcommand{\notice}[1]{{\textcolor{dark}{\textbf{#1}}}}
 \newcommand{\info}[1]{{\textcolor{darkdark}{\textbf{#1}}}}
+\newcommand{\listitem}[1]{{\textcolor{darkdark}{\textit{#1}}}}
+\newcommand{\bubble}[1]{{\tcbox[on line,boxsep=0pt,left=2pt,right=2pt,top=2pt,bottom=2pt,colframe=middle,colback=light]{#1}
+}}
 
 
 \begin{document}
@@ -62,7 +67,7 @@
 
     \begin{adjustwidth}{10pt}{10pt}
 
-        \href{https://urfu.ru/en/}{Ural State Technical University}, \notice{M.S.in computer science}, faculty of radio engineering, \notice{summa cum laude}
+        \href{https://urfu.ru/en/}{Ural State Technical University}, \notice{M.S.in computer science}, faculty of radio engineering, GPA: 3.88, \notice{summa cum laude}
 
     \end{adjustwidth}
 
@@ -73,22 +78,32 @@
 
         \notice{Software Engineer at Tochka Bank} / \textit{05.2019 – present}
 
+        \begin{adjustwidth}{10pt}{10pt}
+
+        \info{skills}: \bubble{python} \bubble{rust} \bubble{sql} \bubble{rabbitmq} \bubble{postgresql} \bubble{kubernetes} \bubble{redis}
+
+        \end{adjustwidth}
+
         \begin{itemize}
 
         \item Designed, developed and launched the quick payments service. It had been implemented from scratch and handled hundreds of thousands of payments a day. \info{The service became profitable in one year after the launch}. The quick payments service is a financial infrastructure that allows customers to make payments without cash or plastic cards using a QR-code (merchant side) and a mobile phone app (customer side) in near-real-time.
 
         \item Fully designed, implemented and configured CI/CD process including unit and integration testing, code analysis, application build and deployment which \info{increased code quality}, \info{lowered bugs quantity} and \info{reduced delay from commit to deployment} to several minutes.
 
-        \item Took part in development of financial analysis web tools backend that helped entrepreneurs to possess comprehensive information about theirs financial statistics. The tools provided a lot of visual information like charts, graphs and tables based on statistical analysis, classification and clusterization algorithms that helped out customers to reduce their expenses. As a result \info{the service received positive feedback and most of the customers extended theirs trial subscription}.
-
         \end{itemize}
 
 
         \notice{Software Engineer at Yandex} / \textit{11.2018 – 05.2019}
 
+        \begin{adjustwidth}{10pt}{10pt}
+
+        \info{skills}: \bubble{python} \bubble{mongodb} \bubble{distributed systems}
+
+        \end{adjustwidth}
+
         \begin{itemize}
 
-        \item Took part in development of a highly-performant and highly-available task scheduler SAAS platform that provided optimal company cluster resources utilization which \info{reduced the cluster maintenance expenses}. The service was able to store and process several petabytes of user data in multiple data centers.
+        \item Took part in development of a highly-performant and highly-available task scheduling SAAS platform that provided optimal company cluster resources utilization which \info{reduced the cluster maintenance expenses}. The service was able to store and process several terabytes of user data in multiple data centers.
 
         \item Took part in development and improvement of service API and SDK providing an ability to describe complex execution pipelines on several thousand of servers in multiple data centers. As a result the \info{service was able to provide availability 99.99\%}.
 
@@ -96,6 +111,12 @@
 
 
         \notice{Software Engineer at USSC Ltd.} / \textit{08.2016 – 11.2018}
+
+        \begin{adjustwidth}{10pt}{10pt}
+
+        \info{skills}: \bubble{python} \bubble{c++} \bubble{networking} \bubble{elasticsearch}
+
+        \end{adjustwidth}
 
         \begin{itemize}
 
