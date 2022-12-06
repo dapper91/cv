@@ -33,7 +33,7 @@
 \newcommand{\notice}[1]{{\textcolor{dark}{\textbf{#1}}}}
 \newcommand{\info}[1]{{\textcolor{darkdark}{\textbf{#1}}}}
 \newcommand{\listitem}[1]{{\textcolor{darkdark}{\textit{#1}}}}
-\newcommand{\bubble}[1]{{\tcbox[on line,boxsep=0pt,left=2pt,right=2pt,top=2pt,bottom=2pt,colframe=middle,colback=light]{#1}
+\newcommand{\bubble}[1]{{\small \tcbox[on line,boxsep=0pt,left=2pt,right=2pt,top=2pt,bottom=2pt,colframe=middle,colback=light]{#1}
 }}
 
 
@@ -67,7 +67,7 @@
 
     \begin{adjustwidth}{10pt}{10pt}
 
-        \href{https://urfu.ru/en/}{Ural State Technical University}, \notice{M.S.in computer science}, faculty of radio engineering, GPA: 3.88, \notice{summa cum laude}
+        \href{https://urfu.ru/en/}{Ural State Technical University}, \notice{M.S.in computer science}, faculty of radio engineering, \notice{summa cum laude}
 
     \end{adjustwidth}
 
@@ -80,15 +80,15 @@
 
         \begin{adjustwidth}{10pt}{10pt}
 
-        \info{skills}: \bubble{python} \bubble{rust} \bubble{sql} \bubble{rabbitmq} \bubble{postgresql} \bubble{kubernetes} \bubble{redis}
+        \small \info{skills}: \bubble{rust} \bubble{python} \bubble{sql} \bubble{distributed systems} \bubble{highly-available services} \bubble{rabbitmq} \bubble{postgresql} \bubble{kubernetes}
 
         \end{adjustwidth}
 
         \begin{itemize}
 
-        \item Designed, developed and launched the quick payments service. It had been implemented from scratch and handled hundreds of thousands of payments a day. \info{The service became profitable in one year after the launch}. The quick payments service is a financial infrastructure that allows customers to make payments without cash or plastic cards using a QR-code (merchant side) and a mobile phone app (customer side) in near-real-time.
+        \item Fully designed, developed and launched the quick payments service. The quick payments service is a financial infrastructure that allows customers to make payments without cash or plastic cards in near-real-time. It had been implemented from scratch and handled hundreds of thousands of payments a day. \info{The service became profitable in one year after the launch}.
 
-        \item Fully designed, implemented and configured CI/CD process including unit and integration testing, code analysis, application build and deployment which \info{increased code quality}, \info{lowered bugs quantity} and \info{reduced delay from commit to deployment} to several minutes.
+        \item Designed, implemented and configured CI/CD process including unit and integration testing, code analysis, application build and deployment which \info{increased code quality}, \info{lowered bugs quantity} and \info{reduced delay from commit to deployment} to several minutes.
 
         \end{itemize}
 
@@ -97,7 +97,7 @@
 
         \begin{adjustwidth}{10pt}{10pt}
 
-        \info{skills}: \bubble{python} \bubble{mongodb} \bubble{distributed systems}
+        \small \info{skills}: \bubble{python} \bubble{mongodb} \bubble{distributed systems} \bubble{highly-available services}
 
         \end{adjustwidth}
 
@@ -114,7 +114,7 @@
 
         \begin{adjustwidth}{10pt}{10pt}
 
-        \info{skills}: \bubble{python} \bubble{c++} \bubble{networking} \bubble{elasticsearch}
+        \small \info{skills}: \bubble{c++} \bubble{python} \bubble{networking} \bubble{cybersecurity}
 
         \end{adjustwidth}
 
@@ -124,7 +124,7 @@
 
         \item Rewritten some security modules from multi-threaded to asynchronous execution model which \info{increased software performance by more than 50\%} and made it possible to monitor much more production facilities without hardware update.
 
-        \item Developed a module that used SCAP (security content automation protocol) standard to analyze OS integrity and protection using open world-wide vulnerability database which \info{let the system to detect 0-day vulnerabilities as soon as possible}.
+        \item Developed a module that used SCAP (security content automation protocol) standard to analyze OS integrity and protection using open world-wide vulnerability database which \info{let the system to detect security flaws as soon as possible}.
 
         \end{itemize}
 
@@ -147,9 +147,9 @@
 
         \rowcolor{middle}
         Languages & Databases     & Frameworks/Libs   & Dev tools  & Other      &  \\
-        Rust      & PostgreSQL    & tokio             & Git        & Linux      & Distributed Systems \\
-        Python    & MongoDB       & asyncio           & Docker     & Kubernetes & Machine Learning Basics \\
-        C/C++     & Redis         & aiohttp           &            & RabbitMQ   & Networking \\
+        Rust      & PostgreSQL    & tokio             & Git        & Linux      & Networking \\
+        Python    & MongoDB       & asyncio           & Docker     & Kubernetes & Distributed Systems \\
+        C/C++     & Redis         & aiohttp           &            & RabbitMQ   & Machine Learning Basics \\
                   & Elasticsearch & flask             &            & Kafka      & CI/CD \\
                   &               & scikit-learn      &            & SQL        &  \\
                   &               &                   &            & BASH       &  \\
